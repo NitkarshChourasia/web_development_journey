@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style_freeCodeCamp.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Survey Form" content="freeCodeCamp project to build a 'Survey Form' for certification project.">
+
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, your additional keywords here">
+
+    <meta name="author" content="Nitkarsh Chourasia">
+
+    <!-- Open Graph Meta Tags for better social media sharing -->
+    <!-- Need to learn it, what it is -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Your page description for social media sharing.">
+    <meta property="og:image" content="URL to your page's main image or logo">
+    <meta property="og:url" content="URL of your webpage">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <!-- What is image/x-icon? -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description">This survey aims to gather valuable feedback from our users.</p>
+        <p> Your responses will help improve our services and tailor our offerings to better meet your needs.</p>
+    </header>
+    <form id="survey-form" action="/submit_form" method="post">
+
+
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Nitkarsh Chourasia (fname lname) required"
+            title="Please fill out this field.">
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="user@example.com" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="13" max="120" placeholder="19" pattern="\d+"
+            title="Please enter a valid number." required>
+
+        <label>Would you recommend Programming to a friend?</label>
+        <select>
+            <option>Definitely</option>
+            <option>Maybe</checkbox>
+            <option>Note sure</option>
+        </select>
+        <!-- If student then colleges else: professional informations-->
+        <select>
+            <option>Student</option>
+            <option>Professional</option>
+        </select>
+        <label id=university-name" for="university">University Name:</label>
+        <input type="text" id="university" name="university" placeholder="Boston University" <select>
+        <label id="course-type" for="course">Course</label>
+        <input type="text" id="course" name="course" placeholder="Bachelors of Technology in Informtion Technology">
+
+        <select>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Self-employed</option>
+            <option>Internshipt</option>
+            <option>Trainee</option>
+        </select>
+
+        <select>
+            <option>On-site</option>
+            <option>Hybrid</option>
+            <option>Remote</option>
+        </select>
+
+
+
+        <div id="to-learn-checkboxes">
+            <!-- How to make it small the italicised word? -->
+            <label>What would you like to learn? <i>(Check all that apply)</i></label>
+            <!-- <p style="font-size: small;">select at leaast two</p> -->
+            <!-- Required at least one -->
+
+
+            <label for="graphic-design">Graphic Design</label>
+            <input type="checkbox" id="graphic-design" name="learning-preference" value="Graphic Design">
+
+            <input type="checkbox" id="front-end" name="learning-preference" value="Front-end Projects">
+            <label for="front-end">Front-end Projects</label>
+
+
+            <input type="checkbox" id="back-end" name="learning-preference" value="Back-end Projects">
+            <label for="back-end">Back-end Projects</label>
+
+
+            <input type="checkbox" id="data-visualization" name="learning-preference" value="Data visualization">
+            <label for="data-visualization">Data visualization</label>
+
+
+            <input type="checkbox" id="machine-learning" name="learning-preference" value="Machine Learning">
+            <label for="machine-learning">Machine Learning</label>
+
+
+            <input type="checkbox" id="open-source" name="learning-preference" value="Open Source Communities">
+            <label for="open-source">Open Source Communities</label>
+
+            <input type="checkbox" id="python" name="learning-preference" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="javascript" name="learning-preference" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+
+            <input type="checkbox" id="cpp" name="learning-preference" value="C++">
+            <label for="cpp">C++</label>
+
+            <input type="checkbox" id="others" name="learning-preference" value="Others">
+            <label for="others">Others</label>
+        </div>
+        <!-- If others then Open up a pop-up -->
+        <script>
+            function validateForm() {
+                var checkboxes = document.getElementByName('learning-preference')
+                var checked = false;
+
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                        checked = true;
+                        break;
+                    }
+                }
+
+                if (!checked) {
+                    alert("Please check at least one checkbox.");
+                    return false; // Prevent form submission
+                }
+                return true; // Allow form submission
+            }
+        </script>
+
+
+        <label>Any comments or suggestions?</label>
+
+        <textarea row="10" col="10"></textarea>
+        <input id="submit-button" type="submit" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
