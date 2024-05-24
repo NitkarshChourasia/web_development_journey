@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #para,
+        header,
+        #para2 {
+            text-align: justify;
+            text-indent: 6%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header {
+            text-indent: 0%;
+            padding: 0px 10px 10px 0px;
+        }
+
+        h1 {
+            font-weight: bold;
+            /* underline */
+            text-decoration: double underline;
+            text-decoration-color: yellow;
+        }
+
+        #btn,
+        #btn2 {
+            padding: 10px 14px;
+            margin: auto;
+            color: white;
+            border: 2px solid;
+            font-weight: bold;
+            background-color: red;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>JS Events</h1>
+            <p id="para">Learn JS Events Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum nihil
+                similique tempora pariatur officiis ipsam, adipisci minima eos maxime quo dignissimos laudantium
+                reprehenderit accusamus impedit atque explicabo porro illo dicta hic! Impedit commodi laudantium aut
+                eligendi rerum fugit sit voluptatum ducimus nihil. Ipsam necessitatibus aliquid accusamus eaque vitae in
+                illo illum modi officiis. Commodi, et quidem aperiam nemo natus itaque molestiae nesciunt reprehenderit
+                harum esse temporibus ex suscipit quod totam! Quaerat, ea ullam pariatur atque recusandae assumenda,
+                debitis perferendis fugiat alias praesentium voluptates quam soluta beatae accusantium nam molestiae
+                totam cum! Qui, eos. Quos ea, sequi quasi nobis at soluta optio dolores nulla unde mollitia repudiandae
+                modi excepturi distinctio doloribus sit suscipit cupiditate doloremque, voluptates praesentium voluptate
+                ipsum accusamus quae ratione quo. Sit neque ratione omnis assumenda voluptas hic, eos aperiam ducimus
+                explicabo sapiente? Alias saepe rerum molestias, omnis, numquam veritatis delectus necessitatibus iste
+                harum est vel aliquam nostrum sint suscipit laudantium totam dolores. Possimus exercitationem
+                consectetur commodi quod ipsum laborum sint, maiores, sequi perferendis aliquid libero accusantium
+                facere necessitatibus sapiente! Mollitia necessitatibus voluptates saepe voluptatum at molestiae
+                consectetur? Minima consectetur nemo recusandae, repellendus reprehenderit commodi sunt doloribus
+                eligendi vero doloremque natus minus optio accusamus autem quam officia amet repellat qui, mollitia
+                debitis ea aut libero nobis soluta? Voluptates explicabo pariatur repellendus nulla, hic, obcaecati
+                laboriosam, et vero magnam voluptas minima? Iste vero inventore minus est expedita quos odit rem
+                voluptatem esse?</p>
+        </header>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <div>
+        <ul>
+            <li>Browser Events:</li>
+            <li>Click</li>
+            <li>ContextMenu</li>
+            <li>Mouseover/Mouseout</li>
+            <li>Mousedown/mouseup</li>
+            <li>Mousemove</li>
+            <li>Submit</li>
+            <li>Focus</li>
+            <li>DOMContentLoaded</li>
+            <li>Transitioned</li>
+        </ul>
+    </div>
+    <div id="para2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil deserunt necessitatibus cumque laboriosam
+            eius neque. Earum iste, sequi a reiciendis excepturi ea dolores quo nam unde. Error aperiam earum vitae
+            sunt, rem perspiciatis voluptas iure iusto laborum dolorum obcaecati minus repellendus possimus totam vel
+            impedit iste nihil doloribus qui dignissimos ipsa. Aliquam possimus animi labore. In inventore dolores
+            doloribus minus molestiae id blanditiis corporis expedita, ipsum est earum, quasi exercitationem beatae,
+            rerum a! Recusandae nostrum laudantium provident dicta nihil praesentium fugit deserunt atque reiciendis!
+            Repellat ea consectetur voluptatum explicabo voluptatem odit sunt, modi maiores voluptas enim a provident
+            adipisci corrupti accusamus expedita repellendus, voluptate id exercitationem amet ex accusantium tenetur
+            dolorem. Quis dolorem placeat magnam repudiandae debitis. Possimus asperiores, libero numquam ex blanditiis
+            ea esse ipsa cum est at quo ad quod adipisci! Voluptas quis amet, sequi necessitatibus, reiciendis
+            voluptatem ad minus iusto saepe quas quae fuga. Id alias, illo quae eius laudantium quod nesciunt tenetur
+            magnam consequatur iste in ullam quos. Nemo quas distinctio dolores quos, accusantium asperiores deleniti et
+            vero incidunt reiciendis nisi ipsa ipsam dolorum harum, quam aliquam nostrum! Tempore libero accusamus
+            impedit assumenda voluptatum doloremque odit, rem sint quas dolor veritatis atque sed cum consequatur optio.
+            Voluptatibus id voluptatem nisi porro minima, dicta aspernatur autem optio, perspiciatis dolorem molestias
+            nulla animi accusamus earum soluta perferendis sit consequatur quaerat. Voluptates maiores, nam iusto
+            voluptatum voluptate praesentium aperiam aspernatur molestiae minima nihil, voluptatibus dolorum aliquam
+            tempora soluta aliquid mollitia qui vel similique labore. Voluptates, sed? Porro ratione totam earum impedit
+            quisquam officiis sint eaque at sequi labore quos modi distinctio quibusdam eligendi, dolores odit atque
+            quasi fugit? Provident minus recusandae voluptatibus et, velit harum eligendi qui, odio quidem consequatur
+            deserunt quod dolores, quaerat corporis eaque molestias nesciunt tempora itaque voluptate doloribus iure
+            corrupti! Nostrum quos at, amet harum obcaecati eaque accusamus optio nam sit tenetur, officiis accusantium.
+            Corrupti eius totam illo facilis magni excepturi delectus rerum, laudantium voluptates repellat similique
+            non reiciendis error maiores harum voluptate nulla ratione. Natus quae facere quia ex saepe dicta, similique
+            assumenda eius porro amet nemo rerum suscipit totam repellat magnam harum quibusdam modi id voluptates
+            eveniet. Maxime voluptates perferendis quisquam, eaque minus culpa, quod ab dolorum deserunt assumenda
+            tenetur necessitatibus iste, voluptatum est officiis ad sit eum ex quia a nulla nemo alias rem? Doloribus
+            inventore facilis impedit vitae sapiente deleniti laudantium aspernatur neque dolore aliquam alias, ipsum
+            obcaecati quae maiores dolorum rem sequi illum assumenda, nisi, debitis architecto ad voluptatem hic
+            accusantium. Magnam atque tenetur minima molestias, dolore accusamus adipisci nihil. Nobis itaque dolorum
+            neque laboriosam dolore, molestias, sapiente illum, fugiat reprehenderit officiis at iure perspiciatis culpa
+            sit odit? Tempora animi a, ratione libero laudantium nam atque ipsum quae dicta quidem, doloribus est?
+            Explicabo eveniet provident impedit sequi perferendis numquam tempora dicta expedita consequuntur,
+            accusantium ipsa eaque a, quam beatae aspernatur, culpa aut dignissimos libero aliquam nam obcaecati quaerat
+            voluptatem dolorem. Aliquid ab cum aliquam obcaecati iusto maiores cupiditate iure, possimus animi modi!
+            Necessitatibus quidem, cupiditate veniam cumque obcaecati, atque pariatur veritatis fugit est dolore odit
+            magnam, saepe blanditiis aliquid! Repellat doloribus est dicta officia harum vero, ipsa voluptatem sunt
+            nostrum deserunt exercitationem similique amet! Recusandae libero quaerat quibusdam aliquid sequi omnis at,
+            nesciunt nihil, nisi temporibus, totam dolore exercitationem? Voluptatibus nobis dolorem deserunt facere
+            eveniet inventore ad totam voluptate tempora labore. Itaque nulla officia amet distinctio perspiciatis
+            tenetur! Iure eaque, voluptate est quasi tempore sit doloremque alias modi incidunt vero! Dolores eligendi
+            tenetur repellendus, nesciunt adipisci reprehenderit ipsa nemo eius modi repellat quasi, architecto eveniet,
+            blanditiis impedit est nam illo autem ratione inventore explicabo unde dolore! Eligendi, commodi aut quas in
+            repellendus sapiente minus ipsam harum perspiciatis nobis dolores facilis natus dicta consequuntur id beatae
+            ea fugiat accusamus nostrum tenetur aperiam quos deserunt velit repellat! Harum perferendis laudantium
+            voluptatibus est reprehenderit deleniti consequuntur neque in fugiat provident, atque expedita. Quaerat
+            laboriosam aliquid dignissimos quam maxime voluptatem asperiores, nemo magni quia beatae hic, cumque nobis
+            esse, eligendi molestiae inventore accusamus. Quos mollitia consequuntur laborum autem veniam aliquam iste
+            eos vero dolores reprehenderit maxime cumque illo officiis nisi minus, voluptas consequatur! Facere non
+            officia atque? Maxime suscipit voluptatibus harum officiis beatae iste? Accusamus ad dolores doloremque
+            suscipit rerum accusantium tenetur in? Deleniti illo sit temporibus adipisci amet corporis. A earum et
+            assumenda placeat quos facere quasi voluptas rerum nulla unde dolore, in iusto, similique eveniet vel ullam
+            asperiores deserunt aliquid id magnam! Tenetur suscipit eius commodi esse id perferendis totam impedit harum
+            corrupti itaque quidem quaerat eveniet repellendus, nam asperiores porro laudantium quae magnam? Fugit,
+            accusamus! Consequuntur pariatur eius magni distinctio, tenetur non officiis! Ab laudantium saepe odit
+            neque, tempore, aut est minus illo reiciendis ducimus sapiente minima aperiam fugiat culpa maiores, ipsa
+            voluptate. Distinctio fuga consequatur molestiae, rerum exercitationem magnam, reiciendis itaque maiores non
+            laudantium sunt obcaecati adipisci magni officia necessitatibus tenetur nam excepturi in. Voluptatibus dolor
+            voluptates laboriosam odio adipisci expedita eveniet ex eius ipsam natus delectus provident quos, quis
+            asperiores id saepe atque rem rerum qui incidunt, facere omnis. Laboriosam iure reiciendis animi, officia
+            numquam odio incidunt ut. Ab excepturi earum molestiae vitae perspiciatis in, dolorem sit minus aliquid
+            ratione voluptates, perferendis neque! A dignissimos quos consequatur pariatur quasi totam, dolorum odio,
+            temporibus harum reiciendis iure cupiditate itaque ipsa recusandae nostrum veniam illo odit magni maxime
+            debitis nemo accusamus quia nam sint. Rem nihil totam, iure enim sint quasi. Illum eos amet, voluptate nemo,
+            sint consequuntur quia quasi corrupti totam blanditiis, asperiores deserunt mollitia? Minima quas vitae
+            culpa maiores fugiat tenetur optio sequi. Minima nemo incidunt dolorem nesciunt, dignissimos quaerat ipsam
+            distinctio? Alias vero cupiditate rem rerum, eveniet aliquam ullam sint nemo inventore ex, voluptas tempore,
+            facilis enim consectetur delectus? Odio, nesciunt aperiam. Amet, hic aliquid tempore nemo distinctio et
+            perferendis culpa autem ipsam praesentium corporis architecto alias eum officiis minima, velit iste odio
+            quidem nulla. Perferendis quas rerum iste repudiandae architecto est maxime nulla eligendi. Eius ipsum, est
+            facere magnam cumque, quis, rem quos libero eveniet repellendus magni dicta. Ipsum quis debitis libero
+            repellat facilis eos accusamus sunt!</p>
+    </div>
+    <button id="btn2" onclick="toggleHide2()">Show/Hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener('mouseover', function run() {
+            if (para.style.color === 'red') {
+                para.style.color = 'black';
+            }
+            else {
+                para.style.color = 'red';
+            }
+            // alert("Move Inside.")
+            console.log("Move Inside.")
+        });
+        para.addEventListener('mouseout', function run() {
+            if (para.style.color === 'red') {
+                para.style.color = 'black';
+            }
+            else {
+                para.style.color = 'red';
+            }
+            // alert("Move Outside.")
+            console.log("Move Outside.")
+        });
+
+        let para2 = document.getElementById("para2");
+        para2.addEventListener('mouseover', function run() {
+            if (para2.style.color === 'red') {
+                para2.style.color = 'black';
+            }
+            else {
+                para2.style.color = 'red';
+            }
+            // alert("Move Inside.")
+            console.log("Move Inside.")
+        });
+
+        para2.addEventListener('mouseout', function run() {
+            if (para2.style.color === 'red') {
+                para2.style.color = 'black';
+            }
+            else {
+                para2.style.color = 'red';
+            }
+            console.log("Move Outside.")
+            // alert("Move Outside.")
+        });
+
+        // para2
+
+        // Optimise the above script
+        // Optimise the above script
+        // TODO: Optimise the above script
+
+
+        function toggleHide() {
+            let btn = document.getElementById("btn");
+            let para = document.getElementById("para");
+            if (para.style.display === 'none') {
+                para.style.display = 'block';
+            } else {
+                para.style.display = 'none';
+            }
+        }
+
+        function toggleHide2() {
+            let btn2 = document.getElementById("btn2");
+            let para2 = document.getElementById("para2");
+            if (para2.style.display === 'none') {
+                para2.style.display = 'block';
+            } else {
+                para2.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
