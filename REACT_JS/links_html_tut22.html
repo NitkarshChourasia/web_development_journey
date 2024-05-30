@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+
+
+    THIS PAGE IS NOT RESPONSIVE.
+    <style>
+        body {
+            font-family: 'Edu TAS Beginner', sans-serif;
+            background-image: url('assets/cash-macanaya-Uk9OaQSbXEM-unsplash.jpg');
+            /* background-image: url(assets/lorenzo-hamers-r5zfOMZOl9U-unsplash.jpg); */
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            position: relative;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            /* Ensure body takes the full viewport height */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(10px);
+            transition: filter 0.5s ease;
+            z-index: -1;
+        }
+
+        body.blur::before {
+            filter: blur(4px);
+        }
+
+        .container {
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: crimson;
+            padding: 6.3px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        a:hover {
+            color: aliceblue;
+            background-color: maroon;
+        }
+
+        .btn {
+            background-color: crimson;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        p,
+        button,
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            font-size: 5em;
+            width: 666px;
+            margin: auto;
+            padding-top: 0.6em;
+        }
+
+        .headElements {
+            padding: 10px;
+        }
+
+        a:visited {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="heading">This is my heading</h2>
+        <div class="headElements">
+            <p>This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil, aliquam
+                maxime ab excepturi dolor soluta asperiores reiciendis. Omnis, ex. Quo similique maxime molestias totam
+                quos
+                sint suscipit quam tempore sed. Sint, voluptates ex eveniet ea ducimus enim autem nihil!</p>
+            <a href="https://google.com" class="btn">Read More</a>
+            <button class="btn">Contact Us</button>
+        </div>
+    </div>
+    <script>
+        let container1 = document.querySelector(".container");
+        let body = document.querySelector("body");
+
+        container1.addEventListener('mouseover', function () {
+            body.classList.add('blur');
+        });
+
+        container1.addEventListener('mouseout', function () {
+            body.classList.remove('blur');
+        });
+    </script>
+</body>
+
+</html>
