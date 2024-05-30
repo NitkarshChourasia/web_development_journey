@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Any recursive p at any end the property will be applied */
+        div p {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div li p {
+            background-color: red;
+            color: white;
+        }
+
+        /* only for direct child for div which is paragraph*/
+        div>p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        /* Whose behind sibling is div */
+        div+p {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another paragraph inside li</p>
+                </li>
+                <li class="item">This is another another paragraph inside li</li>
+                <li class="item">This is another another another paragraph inside li</li>
+                <li class="item">This is another another another another paragraph inside li</li>
+                <li class="item">This will not be affected.</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>
