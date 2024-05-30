@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Navigation Menu">
+    <meta name="keywords" content="Navigation, Menu, HTML, CSS">
+    <title>Navigation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            color: white;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 12px 4px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .search {
+            float: right;
+            margin: 12px 30px;
+            color: white;
+        }
+
+        .navbar input {
+            padding: 4px 4px;
+            border-radius: 12px;
+            border: none;
+            width: 12em;
+        }
+
+        .navbar li a:hover {
+            color: rgb(199, 199, 199);
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search here...">
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+</body>
+
+</html>
