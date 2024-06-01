@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Transform</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100vh;
+            background-color: #add8e6;
+            flex-direction: column;
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: hotpink;
+            border: 2px solid red;
+            border-radius: 2em;
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .box:hover {
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(4);
+            transform: translateX(40px);
+            transform: translateY(40px);
+            transform: translate(-40px, 40px);
+
+        }
+
+        .box p:hover {
+            transition: all 0.2s ease-in-out forward;
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Main hu Nitkarsh Chourasia</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
