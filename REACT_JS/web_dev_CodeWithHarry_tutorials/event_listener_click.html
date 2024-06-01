@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+<script>
+    // let a = 91;
+    "use strict";
+    let a = "Hello";
+    console.log(a);
+    let b = "World";
+    console.log(b);
+    let obja = {
+        name: "Nitkarsh",
+        age: 19,
+        func: function myfunc(number) {
+            console.log("Hello " + number);
+        }
+    };
+    console.log(obja.name);
+    console.log(obja.age);
+
+    document.addEventListener("click", function click() {
+        console.log("Clicked");
+        console.log("I am fine!");
+        console.log("Awesome");
+        alert("Clicked");
+        console.log("How are you?!");
+        setTimeout(() => {
+            console.log("I am fine! Yaaaaaaaay!");
+        }, 4000);
+        // So, it waits for it. Okay, so it is waiting for it? What this property is called?
+    });
+
+    document.addEventListener("click", function nonClick() {
+        console.log("Mouse Clicked");
+        let conf = confirm("Are you sure?");
+        // confirm outputs 0 and 1. So, it is a boolean value. Okay, so
+        console.log(conf);
+        if (conf) {
+            console.log("Yes");
+        } else {
+            console.log("No");
+        }
+    })
+</script>
+
+<body>
+    <header>
+        <h1>Learning JS</h1>
+        <p>Learning JS</p>
+    </header>
+    <!-- Inline CSS is given more preference than internal CSS. -->
+    <!-- Learn CSS precedence -->
+    <!-- Apply "!important" to the CSS property to give it the highest priority (precedence). -->
+
+    <!-- Four types of selectors in CSS
+    - CSS Element Selector
+    - CSS ID Selector
+    - CSS Class Selector
+    - CSS Grouping Selector -->
+
+
+</body>
+
+</html>
