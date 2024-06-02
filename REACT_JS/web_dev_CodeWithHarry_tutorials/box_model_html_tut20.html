@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #ff4e4e;
+        }
+
+        .container {
+            border: 10px solid hotpink;
+            border-radius: 1rem;
+            background-color: lightpink;
+            margin: 20px;
+            padding: 60px;
+
+
+            /* syntax of maring and padding are same */
+
+            /* padding: 20px 30px 54px 23px; */
+            /* padding: top right bottom left; */
+
+            /* padding: 123px 23px; */
+            /* padding: y(top/bottom) x(left/right); */
+
+
+            /* box-model is shown with the same color */
+        }
+
+
+        /* What is box-sizing property in CSS? */
+        /* border-box? */
+
+        h3 {
+            font-family: cursive;
+            font-size: 2em;
+        }
+
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(29, 28, 28);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veniam fugit distinctio,
+            accusamus voluptatum reprehenderit eligendi in exercitationem accusantium inventore a eius possimus.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veniam fugit distinctio,
+            accusamus voluptatum reprehenderit eligendi in exercitationem accusantium inventore a eius possimus.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veniam fugit distinctio,
+            accusamus voluptatum reprehenderit eligendi in exercitationem accusantium inventore a eius possimus.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="fourth">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veniam fugit distinctio,
+            accusamus voluptatum reprehenderit eligendi in exercitationem accusantium inventore a eius possimus.</p>
+    </div>
+</body>
+
+</html>

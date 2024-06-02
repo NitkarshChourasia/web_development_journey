@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Attribute and nth child pseudo selectors">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            border: 2px solid red;
+            width: 300px;
+            margin: 34px 23px;
+            margin: auto;
+
+        }
+
+        input {
+            margin: auto;
+            display: block;
+        }
+
+        input[type="text"] {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid red;
+            margin: auto;
+        }
+
+        li {
+            width: 100px;
+            margin: auto;
+        }
+
+        a[target] {
+            font-size: 44px;
+            color: violet;
+        }
+
+        a[target="_self"] {
+            color: green;
+        }
+
+        input[type="email"] {
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        /* This will apply css for third child */
+        li:nth-child(3) {
+            color: cyan;
+        }
+
+        li:nth-child(2n+0) {
+            color: red;
+        }
+
+        /* Odd child */
+        li:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        /* Even Child */
+        li:nth-child(even) {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank" rel="noopener">Go to Google</a></h1>
+        <h1><a href="https://facebook.com" target="_self" rel="noopener">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+            <input type="email" placeholder="Enter your email">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item - 1</li>
+            <li class="item" id="item-2">Item - 2</li>
+            <li class="item" id="item-3">Item - 3</li>
+            <li class="item" id="item-4">Item - 4</li>
+            <li class="item" id="item-5">Item - 5</li>
+            <li class="item" id="item-6">Item - 6</li>
+            <li class="item" id="item-7">Item - 7</li>
+            <li class="item" id="item-8">Item - 8</li>
+            <li class="item" id="item-9">Item - 9</li>
+            <li class="item" id="item-10">Item - 10</li>
+            <li class="item" id="item-11">Item - 11</li>
+            <li class="item" id="item-12">Item - 12</li>
+            <li class="item" id="item-13">Item - 13</li>
+            <li class="item" id="item-14">Item - 14</li>
+            <li class="item" id="item-15">Item - 15</li>
+            <li class="item" id="item-16">Item - 16</li>
+            <li class="item" id="item-17">Item - 17</li>
+            <li class="item" id="item-18">Item - 18</li>
+            <li class="item" id="item-19">Item - 19</li>
+            <li class="item" id="item-20">Item - 20</li>
+        </ul>
+    </div>
+</body>
+
+</html>

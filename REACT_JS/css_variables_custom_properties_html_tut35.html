@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root {
+            --my-color: violet;
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 233px;
+        }
+
+        .box {
+            /* This is a local scope variable */
+            --box-color: hotpink;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            margin: 10px 10px;
+            box-shadow: var(--box-color) 5px 5px 10px;
+        }
+
+        .container {
+            /* --box-width: 200px;
+            --box-height: 200px;
+            --box-color: blue; */
+            display: flex;
+            align-items: center;
+            margin: auto;
+            max-width: var(--maxw);
+            justify-content: center;
+            /* background-color: var(--box-color); */
+            background-color: (var(--danger-color));
+
+
+            /* justify-content: space-around; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

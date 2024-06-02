@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-size: large;
+}
+/* How to import more fonts into CSS? */
+
+header {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1em;
+}
+/* What is em here? Want to understand different padding styles */
+
+#title {
+    font-size: 60px;
+    margin: 6px;
+    padding: 6px;
+}
+/* Not useful */
+
+/* Want to understand the level of precedence */
+
+/* Want to understand this much more succintly */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border: 5px solid grey;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 0.4px solid black;
+}
+
+
+
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#submit-button {
+    background-color: rgb(73, 236, 73);
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+/* What is actually the values of larger, xxlarger, etc,... */
+
+#to-learn-checkboxes {
+    border: 10px solid black;
+    padding: 100px;
+    /* margin: 110px; */
+}
+As I can see it obeys its parents
+I see
+
+#to-learn-checkboxes label, #to-learn-checkboxes input[type="checkbox"] {
+    border: 10px solid #333;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#to-learn-checkboxes label{
+
+}
